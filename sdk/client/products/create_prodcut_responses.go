@@ -12,7 +12,7 @@ import (
 	"github.com/go-openapi/runtime"
 	"github.com/go-openapi/strfmt"
 
-	"micro-services/models"
+	"micro-services/sdk/models"
 )
 
 // CreateProdcutReader is a Reader for the CreateProdcut structure.

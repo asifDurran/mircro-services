@@ -12,7 +12,7 @@ import (
 	"github.com/go-openapi/swag"
 )
 
-// GenericError GenericError is a generic error message when the product path is not valid
+// GenericError GenericError GenericError is a generic error message when the product path is not valid
 //
 // swagger:model GenericError
 type GenericError struct {

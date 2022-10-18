@@ -3,15 +3,16 @@ consumes:
     - application/json
 definitions:
     GenericError:
-        description: GenericError is a generic error message when the product path is not valid
+        description: GenericError GenericError is a generic error message when the product path is not valid
         properties:
             message:
+                description: message
                 type: string
                 x-go-name: Message
         type: object
-        x-go-package: micro-services/handler
+        x-go-package: micro-services/client/models
     Product:
-        description: Product define the structure for an API product
+        description: Product Product define the structure for an API product
         properties:
             description:
                 description: the dedcription for this product
@@ -47,16 +48,17 @@ definitions:
             - price
             - sku
         type: object
-        x-go-package: micro-services/pkg/data
+        x-go-package: micro-services/client/models
     ValidationError:
-        description: ValidationError is a collection of validation error messages
+        description: ValidationError ValidationError is a collection of validation error messages
         properties:
             Messages:
+                description: messages
                 items:
                     type: string
                 type: array
         type: object
-        x-go-package: micro-services/handler
+        x-go-package: micro-services/client/models
 info:
     description: Documentation for Product API222
     title: of Product API

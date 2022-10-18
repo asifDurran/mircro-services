@@ -18,6 +18,7 @@ type Validation struct {
 func (p *Products) ListAll(w http.ResponseWriter, r *http.Request){
         p.l.Println("[Debug] get all products")
 
+        w.Header().Add("Content-Type", "application/json")
         prods := data.GetProducts()
 
         err := data.ToJSON(prods, w)

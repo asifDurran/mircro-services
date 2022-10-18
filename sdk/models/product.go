@@ -14,7 +14,7 @@ import (
 	"github.com/go-openapi/validate"
 )
 
-// Product Product define the structure for an API product
+// Product Product Product define the structure for an API product
 //
 // swagger:model Product
 type Product struct {
